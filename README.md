@@ -1,5 +1,5 @@
 # Automated Certificate Creator
-Version 2 - Updated: 01/24/2018
+Version 2.0 - Updated: 01/24/2018
 
 This code creates a certificate for students to print out at home or in a computer labs. It replaces the time-consuming tasks that would normally be completed in an office and reduces paper use.
 
