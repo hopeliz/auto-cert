@@ -1,0 +1,170 @@
+<script type="text/javascript">
+  
+// Update the information on the three lines below.
+  
+  var course = "Put the name of the program here within these quotation marks.";
+  var name = "Put the name of the program director here within these quotation marks.";
+  var title = "Put the name of the program director's title here within these quotation marks.";
+    
+// -------- Do not change anything below this line. -------------
+
+/**
+ * @description This function gets the current date and puts it in the preferred format.
+ * @returns string - Date in January 24, 2018 format
+ */
+
+  function getDateString() {
+    var m_names = new Array("January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December");
+    var d = new Date();
+    var curr_date = d.getDate();
+    var curr_month = d.getMonth();
+    var curr_year = d.getFullYear();
+    
+    return (m_names[curr_month] + " " + curr_date + ", " + curr_year);
+  }
+
+/**
+ * @description This function sets the CSS styling needed for the certificate when it appears in its own window.
+ * @returns string - CSS code within <style> tags
+ */
+
+  function setCSS() {
+    return ("<style>" +
+              "#wrapper@X@content.pk_string@X@ { " +
+                "font-family: 'Times', serif; " +
+                "padding: 0; " +
+                "margin: 0; " +
+                "max-width: 1024px; " +
+              "} "+
+              ".pretty-border { " +
+                "border: 1px solid #000; " +
+                "padding: 0; " +
+                "margin: 10px; " +
+                "height: 726px; " +
+              "} "+
+              ".logo { " +
+                "background-color: #FFF; " +
+                "padding: 0; " +
+                "margin: 0; " +
+              "} "+
+              ".user { " +
+                "max-width: 1024px; " +
+                "margin: 0; " +
+                "padding: 0; " +
+              "} " +
+              ".student-name { " +
+                "font-size: 48px; " +
+                "color: rgb(0, 44, 80); " +
+                "text-align: center;" +
+                "margin: 0; " +
+              "} " +
+              ".course-text-big { " +
+                "font-size: 55pt; " +
+                "text-align: center; " +
+                "padding: 30px; " +
+                "margin: 0; " +
+              "} " +
+              ".course-text-small { " +
+                "text-align: center; " +
+                "padding: 50px; " +
+                "margin: 0; " +
+              "} " +
+              ".course-name { " +
+                "font-weight: bold; " +
+                "font-size: 24px; " +
+                "text-align: center; " +
+                "margin: 0; " +
+              "}" +
+              ".date-text { " +                          
+                "font-size: 16px; " +
+                "text-align: center; " +
+              "} " +
+              ".instructor-name { " +
+                "font-weight: bold; " +
+                "margin: 0 auto; " +
+                "padding-top: 5px;" +
+                "} " +
+              ".bottom { " +
+                "border: 0; " +
+                "width: 100%; " +
+              "} " +
+              "#left-column { " +
+                "float: left; " +
+                "margin: 0; " +
+                "border: 1px solid #FFF; " +
+                "padding: 0; " +
+                "width: 50%; " +
+                "height: 75px; " +
+              "} " +
+              "#right-column { " +
+                "border: 1px solid #FFF; " +
+                "text-align: center; " +
+                "margin: 0 auto; " +
+                "padding: 0; " +
+              "} " +
+              "#logo1 { " +
+                "float: left; " +
+                "padding-top: 10px; " +
+                "margin-left: 20px; " +
+              "} " +
+              "#signature { " +
+                "border-bottom: 1px solid #000; " +
+                "margin: 0 auto; " +
+                "padding-right: 20px; " +
+                "padding-left: 20px; " +
+                "padding-top: 5px; " +
+              "} " +
+            "</style>");
+  }
+  
+/**
+ * @description This function creates the certificate document.
+ */
+
+  function printCertOfCompletion@X@content.pk_string@X@() {
+    var DocumentContainer = document.getElementById('wrapper@X@content.pk_string@X@');
+    var styles = setCSS();
+    var WindowObject = window.open('', 'wrapper@X@content.pk_string@X@','width=1024,height=820,top=0,right=0,status=yes,toolbar=no,toolbars=no,location=no,menubar=yes,directories=no,scrollbars=yes,resizable=yes');
+    WindowObject.document.writeln('<html><head>');
+    WindowObject.document.writeln('<title>Certificate</title>');
+    WindowObject.document.writeln( styles );
+    WindowObject.document.writeln('</head><body>');
+    WindowObject.document.writeln(DocumentContainer.innerHTML);
+    WindowObject.document.writeln('</body></html>');
+    WindowObject.document.close();
+    WindowObject.focus();
+  }
+
+  document.write(setCSS());</script>
+
+<p>
+  <input type="button" onclick="printCertOfCompletion@X@content.pk_string@X@()" value="Print your certificate">
+</p>
+
+<div id="wrapper@X@content.pk_string@X@">
+  <div class="pretty-border">
+    <div class="user">
+      <p class="course-text-big">Certificate of Completion</p>
+      <p class="course-text-small" style="font-size: 18pt;">Awarded to</p>
+      <p class="student-name" style="font-size: 46pt;">@X@user.full_name@X@</p> <!-- @X@user.fullname@X@ is a way of getting the user's name from Blackboard -->
+      <p class="course-text-small" style="font-size: 14pt;">For the Successful Completion Of</p>
+      <p class="course-name">
+        <script> document.write(course); </script>
+      </p>
+      <p class="date-text">
+        <script> document.write(getDateString()); </script>
+      </p>
+    </div>
+    <div class="bottom">
+      <div id="left-column">
+        <p><img src="logo.jpg" id="logo1" width="250" alt="Ohio University Logo" /><img src="mascot.jpg" width="140" alt="OU mascot with a lab coat" /></p>
+      </div>
+      <div id="right-column">
+        <img src="signature.jpg" id="signature" width="250px" alt="Signature" />
+        <p class="instructor-name">
+          <script> document.write(name + ", " + title); </script>
+        </p>
+      </div>
+    </div>
+  </div>
+</div>
