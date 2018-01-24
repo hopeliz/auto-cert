@@ -1,4 +1,6 @@
 # Automated Certificate Creator
+Version 2 - Updated: 01/24/2018
+
 This code creates a certificate for students to print out at home or in a computer labs. It replaces the time-consuming tasks that would normally be completed in an office and reduces paper use.
 
 ## Disclaimer
@@ -46,8 +48,11 @@ THE CERTIFICATE WILL LOOK DIFFERENT IN BLACKBOARD THAN THE PDF PRINT PREVIEW.
 4. When a copy is made of the course, you will need to delete and recreate the certificate item.
 
 ## Built with
-1. Komodo Edit
-2. Adobe Photoshop
+1. HTML
+2. CSS
+3. JavaScript
+4. Komodo Edit
+5. Adobe Photoshop
 
 ## Credits
 Automated Certificate Creator was created by Hope E. Moore and Federica Incerti in December 2016.
