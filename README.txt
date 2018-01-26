@@ -13,7 +13,7 @@ INSTRUCTIONS
 I. First Steps:
 
     1. Unzip the Auto-Cert.zip packaged file.
-    2. Open certificate-code.html in a text editor (Notepad, Notepad++, Text Wrangler, Komodo, etc.).
+    2. Open certificate-template.html in a text editor (Notepad, Notepad++, Text Wrangler, Komodo, etc.).
     3. Save the file as something related to the program.
     4. Update the name of the program, program director, and their title in the specified areas at the top of the code.
     5. Place a copy of the signature image file in the folder with the certificate code.
@@ -26,7 +26,7 @@ II. In Blackboard:
     3.  Add an item to that folder with the copy from certificate-copy.txt and update it however you'd like.
     4.  Start creating an item in the folder (Build Content > Item).
     5.  Click the "HTML" button on the top-right side of the textbox. It will pop up a blank text box.
-    6.  Copy the code from certificate-code.html and paste it in the blank HTML textbox.
+    6.  Copy the code from certificate-template.html and paste it in the blank HTML textbox.
     7.  Click the "Update" button. The certificate will appear in the Blackboard textbox with broken images.
     8.  Click on the first broken image to select it.
     9.  Click the "Insert/Edit Image" icon at the top of the textbook. This will make a window pop up with an "Image URL" field.
@@ -35,7 +35,7 @@ II. In Blackboard:
     12. Click the "Insert" button on the right. The image should now appear in the certificate.
     13. Do steps 8 through 12 with each broken image.
     14. Click the "Submit" button.
-    15. Browse and find the images Blackboard asks for and click the "Submit" button. “signature.jpg” is a placeholder, so use the signature image you need, even if the name of the file does not match.
+    15. Browse and find the images Blackboard asks for and click the "Submit" button. √ísignature.jpg√ì is a placeholder, so use the signature image you need, even if the name of the file does not match.
     
     The certificate should now appear with a "Print Your Certificate" button at the top of the item.
     THE CERTIFICATE WILL LOOK DIFFERENT IN BLACKBOARD THAN THE PDF PRINT PREVIEW.
