@@ -13,7 +13,7 @@ This was optimized for Blackboard Learn (the version being used as of January 20
 I. First Steps:
 
 1. Unzip the Auto-Cert.zip packaged file.
-2. Open certificate-code.html in a text editor (Notepad, Notepad++, Text Wrangler, Komodo, etc.).
+2. Open certificate-template.html in a text editor (Notepad, Notepad++, Text Wrangler, Komodo, etc.).
 3. Save the file as something related to the program.
 4. Update the name of the program, program director, and their title in the specified areas at the top of the code.
 5. Place a copy of the signature image file in the folder with the certificate code.
@@ -26,7 +26,7 @@ II. In Blackboard:
 3. Add an item to that folder with the copy from certificate-copy.txt and update it however you'd like.
 4. Start creating an item in the folder (Build Content > Item).
 5. Click the "HTML" button on the top-right side of the textbox. It will pop up a blank text box.
-6. Copy the code from certificate-code.html and paste it in the blank HTML textbox.
+6. Copy the code from certificate-template.html and paste it in the blank HTML textbox.
 7. Click the "Update" button. The certificate will appear in the Blackboard textbox with broken images.
 8. Click on the first broken image to select it.
 9. Click the "Insert/Edit Image" icon at the top of the textbook. This will make a window pop up with an "Image URL" field.
